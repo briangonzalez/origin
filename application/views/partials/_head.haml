@@ -1,10 +1,11 @@
 
 %meta{:charset => "utf-8"}
-%link{:href => image_path('favicon.ico'), :rel => "shortcut icon"}
+%link{:href => image_path('favicon.png'), :rel => "shortcut icon"}
 
-%title= "#{@title_tertiary || @title} | #{app(:site)}"
-%meta{:content => app(:tagline), :name => "description"}
+%title= "#{app(:site)} | #{@title_tertiary || @title}"
+%meta{:content => app(:description), :name => "description"}
 %meta{:content => "width=device-width", :name => "viewport"}
+%meta{ :'http-equiv' => "X-UA-Compatible", content: "chrome=1"}
 
 / Bring in our own styles
 %link{:href => stylesheet_path('bootstrap'), :media => "all", :rel => "stylesheet"}

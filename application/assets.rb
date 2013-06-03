@@ -48,7 +48,3 @@ configure do
     config.manifest.compile(%w(bootstrap.css) | images | fonts)
   end
 end
-
-# remove js
-FileUtils.rm_rf(settings.public_js_folder) if File.exists? settings.public_js_folder
-FileUtils.cp_r(settings.app_js_folder, settings.public_folder)

@@ -9,8 +9,6 @@ $breakpoint:                  0em 45em; /* min-max media query breakpoint */
 $from-direction:              left;
 $omega-float:                 $from-direction;
 
-$max-width:                   600px;     
-
 
 /* Colors */
 $primary-color:               #e54e4b;
@@ -20,6 +18,7 @@ $lightgrey:                   #ddd;
 $darkgrey:                    #333;
 $border-color:                #eee;
 $blockquote-border-color:     $primary-color;
+
 
 /* Typography */
 $text-color:                  #333;
@@ -31,3 +30,11 @@ $base-heading-font:           Arial, sans-serif, sans;
 $code-font:                   Menlo,Monaco,Courier New,monospace,serif;
 $base-heading-fontweight:     bold;
 $base-headingfont-color:      $text-color - 5;
+
+/* Breakpoints */ 
+$break-1:     320px;
+$break-2:     600px;
+$break-3:     768px;
+$break-4:     992px;
+$break-5:     1382px;
+$break-6:     1700px;

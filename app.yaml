@@ -1,13 +1,14 @@
 
-author:   Brian G.
-twitter:  brianmgonzalez
-github:   briangonzalez
+author:         Brian G.
+twitter:        brianmgonzalez
+github:         briangonzalez
 
-site:     origin
-tagline:  a simple sinatra starter
+site:           origin
+tagline:        a simple sinatra starter
+description:    origin is a simple sinatra starter implemented with best practices in mind
 
-version:  0.1
-ga:       'UX-XXXXXX'
+version:        0.1
+ga:             'UX-XXXXXX'
 
 google_fonts:
   - Source+Code+Pro
