@@ -1,12 +1,10 @@
 
 /* Your own imports */
 @import 'partials/mixins';
-@import 'partials/media';
 @import 'partials/variables';
 @import 'partials/fonts';
 
 body{
-
 
   .container{
     @include container;
