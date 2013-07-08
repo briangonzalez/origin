@@ -1,7 +1,3 @@
-# further requires (models, helpers, core extensions etc. 
-Dir.glob('./application/**/*.rb') do |file|
-  require file
-end
 
 before do
   # opt into the future

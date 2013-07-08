@@ -9,15 +9,21 @@ set :raise_errors,      development?
 set :public_folder,     './public'
 set :public_js_folder,  './public/javascripts'
 set :app_js_folder,     './application/assets/javascripts'
+set :app_css_folder,    './application/assets/stylesheets'
 set :views,             './application/views'
 set :logging,           true
-set :static,            true                  # your upstream server should deal with those (nginx, Apache)
+set :static,            development?                        # your upstream server should deal with those (nginx, Apache)
 set :haml,              :format => :html5
 
 
 # core Ruby requires, modules and the main app file
 %w(securerandom timeout cgi date ./application/app).each do |requirement|
   require requirement
+end
+
+# further requires - models, helpers, core extensions etc. 
+Dir.glob('./application/**/*.rb') do |file|
+  require file
 end
 
 # site's variables
