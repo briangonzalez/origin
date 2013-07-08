@@ -9,7 +9,6 @@ gem 'json', '~> 1.7.7'
 
 # rack
 gem 'rack'
-gem 'rack-cache'
 
 # sinatra
 gem 'sinatra'
