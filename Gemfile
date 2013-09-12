@@ -12,15 +12,15 @@ gem 'rack'
 
 # sinatra
 gem 'sinatra'
+gem 'sinatra-contrib'
 
-# sprockets galore
+# sprockets
 gem 'sprockets'
 gem 'sprockets-sass'
 gem 'sprockets-helpers'
 
-# html/css/js
+# html / css / js
 gem 'compass'
-gem 'compass-h5bp'
 gem 'compass-normalize'
 gem 'haml'
 gem 'maruku' # (markdown)

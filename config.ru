@@ -4,7 +4,7 @@ Bundler.require(:default)
 
 # config
 set :run,               false
-set :show_exceptions,   false
+# set :show_exceptions,   true
 set :raise_errors,      development?
 set :public_folder,     './public'
 set :public_js_folder,  './public/javascripts'
@@ -17,7 +17,7 @@ set :haml,              :format => :html5
 
 
 # core Ruby requires, modules and the main app file
-%w(securerandom timeout cgi date ./application/app).each do |requirement|
+%w(securerandom timeout cgi date ./app).each do |requirement|
   require requirement
 end
 
@@ -29,6 +29,7 @@ end
 # site's variables
 app = YAML.load(File.read("app.yaml"))
 set :app_values, app
+
 
 # sprockets
 map Sinatra::Application.settings.assets_prefix do

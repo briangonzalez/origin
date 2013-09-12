@@ -6,17 +6,17 @@
 /[if gt IE 8]>  <html class="no-js">
 
 %head
-  = partial "partials/head"
+  = haml :"partials/_head"
 
 %body
 
   .container
-    = partial "partials/header"
+    = haml :"partials/_header"
 
   .container{ :role => "main" }
     = yield
 
   .container
-    = partial "partials/footer"
-    = partial "partials/ga"
+    = haml :"partials/_footer"
+    = haml :"partials/_ga"
     
